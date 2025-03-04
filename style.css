@@ -1,0 +1,355 @@
+/* style.css */
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+}
+
+#menu {
+    width: 300px;
+    background-color: #d0c9c9;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    position: fixed;
+    height: 100vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-image {
+    width: 100px; /* Or any desired width */
+    height: 100px; /* Make height equal to width for a circle */
+    border-radius: 70%; /* Make it a circle */
+    margin: 0 auto 20px auto; /* Center horizontally and add bottom margin */
+    display: block; /* Ensure it behaves as a block element */
+    object-fit: cover; /* Prevent image distortion */
+}
+
+#menu nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+#menu nav ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px 0;
+}
+
+#menu nav ul li a:hover {
+    background-color: #e0e0e0;
+}
+
+.menu-footer {
+    margin-top: auto;
+}
+
+#menu .social-links a { /* Corrected selector */
+    text-decoration: none;
+    margin: 0 15px;
+    color: #333;
+    font-size: 20px; /* Consistent font size */
+    transition: color 0.3s ease;
+}
+
+#menu .social-links a:hover { /* Corrected selector */
+    color: #007bff;
+}
+
+#menu .menu-footer p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+#content {
+    flex: 1;
+    box-sizing: border-box;
+    margin-left: 300px;
+}
+
+.section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#home {
+    background-color: #f9f9f9;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #333;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* min-height: 100vh; */
+    padding-left: 10%;
+    padding-right: 10%;
+    box-sizing: border-box;
+}
+
+#home h1 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+}
+
+#home p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+#home a {
+    background-color: black;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+#home a:hover {
+    background-color: #595959;
+}
+
+#about {
+    background-color: #f9f9f9;
+    text-align: left;
+    padding-left: 10%;
+    padding-right: 10%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 50px;
+    min-height: 100vh;
+}
+
+#about h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+#about p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.about-content-container {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.about-text {
+    padding-right: 20px;
+    width: 60%;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.skill-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.skill-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.skill-item i {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.skill-item p {
+    font-size: 14px;
+}
+
+.skill-item:nth-child(even) {
+    margin-left: 50px; /* Reduced margin */
+}
+
+#skills {
+    background-color: #f9f9f9;
+    text-align: left;
+    padding-left: 10%;
+    padding-right: 10%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 50px;
+    min-height: 100vh;
+}
+
+#skills h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.skills-certifications-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.skills-category, .certifications-category {
+    width: 48%;
+}
+
+.skills-category h3, .certifications-category h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.skills-list h4 {
+    font-size: 1.2em;
+    margin-top: 15px;
+}
+
+#skills ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+#skills li {
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+.certification-item {
+    margin-bottom: 15px;
+}
+
+.certification-item h4 {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.certification-item p {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.certification-item a {
+    font-size: 1em;
+    text-decoration: none;
+    color: #007bff; /* Link color */
+}
+
+.certification-item a:hover {
+    text-decoration: underline;
+}
+
+#projects {
+    background-color: #f9f9f9;
+    text-align: left;
+    padding-left: 10%;
+    padding-right: 10%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 50px;
+    min-height: 100vh;
+}
+
+#projects h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.project {
+    margin-bottom: 20px;
+    text-align: left; /* Align text to the left */
+}
+
+.project img {
+    max-width: 300px; /* Adjust image size */
+    height: auto;
+    display: block; /* Ensure image is a block element */
+    margin-bottom: 10px; /* Add space below image */
+}
+
+.project h3 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.project p {
+    font-size: 1em;
+    line-height: 1.6; /* Improve readability */
+}
+
+.view-project-button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    display: inline-block; /* Ensure it behaves as an inline-block element */
+    margin-top: 15px; /* Add space above the button */
+}
+
+.view-project-button:hover {
+    background-color: #595959;
+}
+
+@media (max-width: 768px) {
+    #menu {
+        width: 100%;
+        position: static;
+        height: auto;
+        flex-direction: row;
+        overflow-y: none;
+    }
+
+    #content {
+        margin-left: 0;
+    }
+    .skills-certifications-container {
+        flex-direction: column;
+    }
+    .skills-category, .certifications-category {
+        width: 100%;
+    }
+    .skill-item:nth-child(even) {
+        margin-left: 0;
+    }
+}
